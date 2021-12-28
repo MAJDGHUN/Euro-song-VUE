@@ -61,7 +61,7 @@ export default {
   },
 
   mounted() {
-    this.fetchSongs();
+    
     this.renderChart(this.songs);
   },
 
