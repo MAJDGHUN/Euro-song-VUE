@@ -58,7 +58,7 @@ export default {
   mounted() {
     this.fetchAll_Songs();
     this.fetchAll_Votes();
-    this.fetchAll_Atists();
+    
   },
 
   methods: {
@@ -78,23 +78,6 @@ export default {
 
           this.fetchAll_Votes(All_Songs);
           this.fetchAll_Atists(All_Songs);
-        });
-    },
-
-    fetchAll_Atists(All_Songs) {
-      const url = "http://webservies.be/eurosong/Artist";
-      fetch(url)
-        .then((response) => {
-          return response.json();
-        })
-        .then((All_Atists) => {
-          All_Songs.map((my_song) => {
-            const a = All_Atists.find((artist) => artist.id == my_song.artist);
-            my_song.artist = a.name;
-            
-            return my_song;
-          });
-          this.All_Songs = All_Songs;
         });
     },
 
