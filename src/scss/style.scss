@@ -1,0 +1,70 @@
+// Settings
+@import "./settings/colors.scss";
+@import "./settings/font-sizes.scss";
+
+// Components
+@import "./components/body.scss";
+@import "./components/feedback.scss";
+@import "./components/nav.scss";
+table,  td {
+  border: 1px solid rgb(255, 255, 255);
+
+}
+
+table {
+  width: 100%;
+}
+tr:hover {background-color: rgb(148, 255, 211);}
+th {
+  background-color: #04AA6D;
+  color: white;
+  height: 30px;
+}
+button {
+  
+  position: relative;
+  background-color: #04AA6D;
+  border: none;
+  font-size: 20px;
+  color: #FFFFFF;
+  padding: 15px;
+  width: 442px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+button:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+h1 {
+  font-size: 5rem;
+
+  text-shadow: 1px 1px 1px rgb(70, 151, 124),
+               2px 2px 1px rgb(55, 168, 125);
+
+  letter-spacing: 2px;
+}
+
+h1 + p {
+  font-weight: bold;
+}

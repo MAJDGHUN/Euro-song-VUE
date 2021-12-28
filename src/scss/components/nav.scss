@@ -1,0 +1,20 @@
+// Navigation Component
+.c-nav {
+    background-color: $primary-grey;
+    color: $primary-black;
+
+    .c-nav-list {
+        list-style: none;
+
+        display: flex;
+
+        .c-nav-list-item {
+            padding: 10px;
+
+            &:hover {
+                background-color: $primary-white;
+                cursor: pointer;
+            }
+        }
+    }
+}
