@@ -102,7 +102,9 @@ export default {
               });
             return my_song;
           });
-          this.All_Songs = All_Songs.sort((a, b) => b.allPoints - a.allPoints);
+ 
+          this.All_Songs = All_Songs.slice((ss, dd) => dd.allPoints - ss.allPoints);
+          this.All_Songs = All_Songs.sort();
         });
     },
   },
