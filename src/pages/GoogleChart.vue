@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Vue Js Google Column or Bar Chart Demo</h2>
+    <h2>Vue Js ChartS</h2>
     <button @click="goToPage('game')">Show game</button>
 
     <button @click="goToPage('ranking')">Show ranking</button>
